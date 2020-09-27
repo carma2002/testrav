@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# config v2ray
 cat << EOF > /etc/config.json
 {
   "inbounds":[
@@ -28,5 +27,4 @@ cat << EOF > /etc/config.json
 }		
 EOF
 
-# run v2ray
 v2ray -config /etc/config.json
