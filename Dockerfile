@@ -9,6 +9,6 @@ COPY --from=builder /tmp/v2ray.tgz /tmp
 RUN tar xvfz /tmp/v2ray.tgz -C /usr/bin && \
     rm -rf /tmp/v2ray.tgz
 
-ADD v2ray.sh /v2ray.sh
+ADD run.sh /run.sh
 RUN chmod +x /v2ray.sh
-CMD /v2ray.sh
+CMD /run.sh
